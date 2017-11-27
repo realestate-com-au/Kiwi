@@ -97,7 +97,10 @@
         { \
             /* The shadow `self` must be declared inside a new scope to avoid compiler warnings. */ \
             /* The receiving class object delegates unrecognized selectors to the current example. */ \
-            __unused name *self = _kw_test_case_class;
+            _Pragma("clang diagnostic push") \
+            _Pragma("clang diagnostic ignored \"-Wshadow\"")  \
+            __unused name *self = _kw_test_case_class;   \
+            _Pragma("clang diagnostic pop")
 
 #define SPEC_END \
         } \
