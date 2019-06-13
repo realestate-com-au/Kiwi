@@ -341,7 +341,7 @@ void KWClearObjectStubs(id anObject) {
 void KWClearAllObjectStubs(void) {
     for (KWInterceptedObjectBlock key in KWObjectStubs) {
         id stubbedObject = key();
-        if (KWObjectClassRestored(stubbedObject)) {
+        if (stubbedObject == nil || KWObjectClassRestored(stubbedObject)) {
             continue;
         }
         KWRestoreOriginalClass(stubbedObject);
