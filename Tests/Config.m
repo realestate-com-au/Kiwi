@@ -1,4 +1,4 @@
-#import <Kiwi/Kiwi.h>
+#import "Kiwi.h"
 
 CONFIG_START
 

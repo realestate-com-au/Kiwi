@@ -4,7 +4,7 @@
 // Copyright 2010 Allen Ding. All rights reserved.
 //
 
-#import <Kiwi/Kiwi.h>
+#import "Kiwi.h"
 
 @interface TestVerifier : NSObject<KWVerifying>
 

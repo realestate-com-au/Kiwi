@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Allen Ding. All rights reserved.
 //
 
-#import <Kiwi/Kiwi.h>
+#import "Kiwi.h"
 #import "KiwiTestConfiguration.h"
 
 #if KW_TESTS_ENABLED

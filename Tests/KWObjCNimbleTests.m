@@ -1,4 +1,4 @@
-#import <Kiwi/Kiwi.h>
+#import "Kiwi.h"
 #import <Nimble/Nimble.h>
 #import "KWFailureInterceptingSpec.h"
 #import "KiwiTestConfiguration.h"
